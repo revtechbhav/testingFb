@@ -1,0 +1,1599 @@
+#myModal-gift #viewport {
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  margin: auto;
+  background-color: #rgba(204, 204, 204, 0.44);
+}
+
+#myModal-gift #cube {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  border: 0px solid red;
+  margin: 158px 150px 100px 150px;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transform: rotateX(-23deg) rotateY(-17deg) rotateZ(0deg);
+}
+
+#myModal-gift .anim {}
+
+#myModal-gift .stop-anim {
+  animation: none;
+  -webkit-animation: none;
+}
+
+#myModal-gift .wall {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  background-color: #a9a9a9;
+  color: #fff;
+  font-size: 72px;
+  position: absolute;
+  -webkit-transition: all 2s ease-out;
+  #-webkit-backface-visibility: hidden
+}
+
+
+/*#cube .open .wall:before{
+  height: 0%;
+  transition: all 1s ease;
+  }*/
+
+  #myModal-gift .wall:before {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    border-right: 10px solid #e1ded9;
+    width: 10px;
+    height: 100%;
+    top: 0;
+    transition: all 1s ease;
+    z-index: 9;
+    margin: 0px auto;
+  }
+
+
+/*#cube .open .wall:after{
+  border-color: #ffc113;
+  }*/
+
+  #myModal-gift .wall:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    border-top: 10px solid #e1ded9;
+    width: 100%;
+    height: 10px;
+    top: 0;
+    transition: all 1s ease;
+    margin: 0px auto;
+    box-shadow: 0px 3px 6px rgb(123, 111, 111);
+  }
+
+  #myModal-gift #top:after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    border-top: 10px solid #e1ded9;
+    width: 100%;
+    box-shadow: none;
+    height: 10px;
+    top: 45px;
+    transition: all 1s ease;
+  }
+
+
+/*#cube .open #top:after{
+  width: 0%;
+  }*/
+
+  #myModal-gift #front {
+    #background-color: red;
+    -webkit-transform: rotateX(0deg) rotateY(0deg) translateZ(50px);
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  #myModal-gift #right {
+    height: 100px;
+    #background-color: rgba(0, 0, 255, 0.09);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: translateX(50px) rotateY(90deg);
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  #myModal-gift #top {
+    #background-color: skyblue;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-transform: translateY(-50px) rotateX(90deg);
+    -webkit-transform-origin: 100% 50%;
+    transition: all 1s ease;
+  }
+
+  #myModal-gift #back {
+    #background-color: green;
+    -webkit-transform: rotateX(0deg) rotateY(180deg) translateZ(50px);
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  #myModal-gift #left {
+    #background-color: yellow;
+    -webkit-transform: rotateX(0deg) translateX(-50px) rotateY(-90deg);
+    -webkit-transform-origin: 50% 100%;
+  }
+
+  #myModal-gift #bottom {
+    #background-color: grey;
+    -webkit-transform: rotateX(-90deg) rotateY(0deg) translateZ(50px);
+  }
+
+
+  /**-----------------------------OPEN BOX-----------------------------**/
+
+  @-webkit-keyframes cubeDrunk {
+    from {
+      -webkit-transform: rotateX(-23deg) rotateY(-17deg) rotateZ(0deg);
+    }
+    to {
+      -webkit-transform: rotateX(-23deg) rotateY(343deg) rotateZ(0deg);
+    }
+  }
+
+  @-webkit-keyframes topDance
+  /**SafariandChrome**/
+
+  {
+    0% {
+      -webkit-transform: translateY(-100px) rotateX(90deg);
+      -webkit-transform-origin: 100% 50%;
+    }
+    0.5% {
+      #width: 100px;
+      -webkit-transform: translateY(-100px) rotateX(90deg) rotateY(90deg);
+      -webkit-transform-origin: 100% 50%;
+    }
+    0.99% {
+      #width: 0px;
+      #-webkit-transform: translateY(-100px) rotateX(90deg) rotateY(180deg) translateX(-200px) translateZ(200px);
+      -webkit-transform-origin: 100% 50%;
+      -webkit-transform: translateY(-100px) rotateX(90deg) rotateY(90deg) translateZ(2000px);
+    }
+    100% {
+      -webkit-transform-origin: 100% 50%;
+      -webkit-transform: translateY(-100px) rotateX(90deg) rotateY(180deg) translateX(-200px) translateZ(200px);
+    }
+  }
+
+  #myModal-gift #cube .open div:nth-child(5) {
+    margin: 130px 0 0 -121px;
+    transition: all 1s ease;
+  }
+
+  #myModal-gift #cube .open div:nth-child(5):after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    content: "";
+    border-top: 10px solid #a9a9a9;
+    width: 100%;
+    height: 10px;
+    top: 0;
+    transition: all 1s ease;
+    margin: 0px auto;
+    /*box-shadow: 0px 3px 6px rgb(132, 122, 122);*/
+  }
+
+  #myModal-gift #cube .open .wallna a {
+    animation: animdown 1s forwards;
+    -moz-animation: animdown 1s forwards;
+    -webkit-animation: animdown 1s forwards;
+    -webkit-transition-delay: 5s;
+    transition-delay: 5s;
+  }
+
+  @-webkit-keyframes animdown {
+    0% {
+      bottom: 10px;
+    }
+    10% {
+      bottom: 20px;
+    }
+    20% {
+      bottom: 30px;
+    }
+    30% {
+      bottom: 40px;
+    }
+    40% {
+      bottom: 50px;
+    }
+    50% {
+      bottom: 60px;
+    }
+    60% {
+      bottom: 70px;
+    }
+    70% {
+      bottom: 80px;
+    }
+    80% {
+      bottom: 90px;
+      position: relative;
+    }
+    90% {
+      bottom: 100px;
+      position: relative;
+    }
+    100% {
+      bottom: 110px;
+      position: relative;
+    }
+  }
+
+  #myModal-gift .wallna {
+    width: 99px;
+    height: 100px;
+    color: #cc2000;
+    text-align: center;
+    font-size: 30px;
+    border: 0px solid pink;
+    position: absolute;
+  }
+
+  #myModal-gift .wallna img {
+    width: 100%;
+    height: 100%;
+  }
+
+  #myModal-gift #top span:before {
+    content: url(../img/bow-two.png);
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: -34px;
+    margin: 0px auto;
+    z-index: 999;
+    display: block;
+    width: 55px;
+  /*  transform: flip(30deg);
+  -webkit-transform: flip(30deg);
+  transform: translate(0px, -4px);
+  -webkit-transform: translate(0px, -4px);*/
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: translateY(8px) rotateX(0deg);
+  -webkit-transform-origin: 100% 50%;
+  transition: all 1s ease;
+}
+
+
+/*#top span:after{
+  content: url(../img/ribbon.png);
+  position: absolute;
+  top: 20%;
+  right: 0;
+  left: 0;
+  margin: 0px auto;
+  z-index: 999;
+  display: block;
+  width: 55px;
+  transform: flip(30deg);
+  transform: rotate(179deg);
+  -webkit-transform: flip(30deg);
+  -webkit-transform: rotate(179deg);
+  }*/
+
+  #myModal-gift .open .front .frontside img.adidas {
+    opacity: 0;
+  }
+
+  #myModal-gift .box.nike .frontside {
+    background-color: rgb(235, 63, 63);
+  }
+
+  #myModal-gift .box.adidas .frontside {
+    background-color: #333;
+  }
+
+  #myModal-gift .boxwrapper {
+    width: 100%;
+    height: 100%;
+    padding: 94px 0;
+    float: left;
+    -webkit-perspective: 1000px;
+    -moz-perspective: 1000px;
+    perspective: 1000px;
+    -webkit-perspective-origin: 50% 50%;
+    -moz-perspective-origin: 50% 50%;
+    perspective-origin: 50% 50%;
+   /* background:#fff;*/
+  }
+
+  #myModal-gift .box {
+     width: 189px;
+    height: 110px;
+    margin: 110px;
+    cursor: pointer;
+    background: transparent;
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: translate(-22%, -50%) rotateX(40deg);
+    -moz-transform: translate(-22%, -50%) rotateX(40deg);
+    transform: translate(-22%, -50%) rotateX(40deg);
+  }
+
+  #myModal-gift .box.nike img.nike,
+  #myModal-gift .box.adidas img.adidas {
+    display: block;
+  }
+
+  #myModal-gift .box .frontside {
+    z-index: 2;
+  }
+
+  #myModal-gift .box .backside {
+    z-index: 1;
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+
+  #myModal-gift .box.nike .backside {
+    background-color: #f1c88c;
+  }
+
+  #myModal-gift .box.adidas .backside {
+    background-color: #eee;
+    color: #000;
+  }
+
+  #myModal-gift .backside span {
+    transform: rotate(179deg);
+    margin-bottom: 50px;
+    float: left;
+    width: 100%;
+    font-size: 20px;
+    backface-visibility: inherit;
+    -webkit-backface-visibility: hidden;
+  }
+
+  #myModal-gift .frontside,
+  #myModal-gift .backside {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 300px;
+    color: white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  #myModal-gift .box .face {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    transition: all .3s linear;
+  }
+
+  #myModal-gift .box.nike .face {
+    border: 1px solid #fff;
+    background-color: rgb(235, 63, 63);
+  }
+
+  #myModal-gift .box.adidas .face {
+    border: 1px solid #ccc;
+    background-color: #333;
+  }
+
+
+  /*COVER OF THE BOX*/
+
+  #myModal-gift .box .face.front {
+    width: 300px;
+    height: 180px;
+    -webkit-transform: translateY(0px) translateZ(0px) rotateX(0deg);
+    -moz-transform: translateY(0px) translateZ(0px) rotateX(0deg);
+    transform: translateY(0px) translateZ(0px) rotateX(0deg);
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    transform-origin: top center;
+    z-index: 100;
+  }
+
+  #myModal-gift .box.open .face.front {
+    -webkit-transform: translateY(0px) translateZ(0px) rotateX(90deg);
+    -moz-transform: translateY(0px) translateZ(0px) rotateX(90deg);
+    transform: translateY(0px) translateZ(0px) rotateX(120deg);
+  }
+
+  #myModal-gift .box .face.front .hole:nth-child(1) {
+    width: 18px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    overflow: hidden;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+
+  #myModal-gift .box .face.front .hole:nth-child(2) {
+    width: 18px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    overflow: hidden;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+  }
+
+  #myModal-gift .box.nike .face.front .hole:nth-child(1):after {
+    content: '';
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    left: -100%;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 15px #fff;
+  }
+
+  #myModal-gift .box.nike .face.front .hole:nth-child(2):after {
+    content: '';
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    right: -100%;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 15px #fff;
+  }
+
+  #myModal-gift .box.adidas .face.front .hole:nth-child(1):after {
+    content: '';
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    left: -100%;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 15px #fff;
+  }
+
+  #myModal-gift .box.adidas .face.front .hole:nth-child(2):after {
+    content: '';
+    width: 35px;
+    height: 40px;
+    position: absolute;
+    right: -100%;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: inset 0px 0px 15px #fff;
+  }
+
+  #myModal-gift .box .face.front>.frontside>img.nike {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  #myModal-gift .box .face.front>.frontside>img.adidas {
+    position: absolute;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    right: 0;
+    left: -50px;
+    margin: 0px auto;
+    transform: skew(21deg);
+  }
+
+  #myModal-gift .box .face.front .flap {
+    position: absolute;
+    z-index: 150;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+  }
+
+  #myModal-gift .box.nike .face.front .flap {
+    border: 1px solid #fff;
+    background-color: rgb(235, 63, 63);
+  }
+
+  #myModal-gift .box.adidas .face.front .flap {
+    border: 1px solid #ccc;
+    background-color: #333;
+  }
+
+  #myModal-gift .box .face.front .flap .frontside {
+    z-index: 152;
+  }
+
+  #myModal-gift .box .face.front .flap .backside {
+    z-index: 151;
+  }
+
+  #myModal-gift .box .face.front .flap.front {
+    height: 50px;
+    width: 300px;
+    left: -1px;
+    -webkit-transform: translateY(180px) translateZ(0px) rotateX(-90deg);
+    -moz-transform: translateY(180px) translateZ(0px) rotateX(-90deg);
+    transform: translateY(180px) translateZ(0px) rotateX(-90deg);
+    -webkit-transform-origin: top center;
+    -moz-transform-origin: top center;
+    transform-origin: top center;
+  }
+
+  #myModal-gift .box .face.front .flap.front .frontside img.adidas {
+    position: absolute;
+    height: 100%;
+    width: 62%;
+    top: 0;
+    left: 76px;
+    transform: skew(-40deg);
+    right: 0;
+    margin: 0px auto;
+  }
+
+  #myModal-gift .box .face.front .flap.left-side {
+    width: 50px;
+    height: 180px;
+    top: -1px;
+    left: -1px;
+    position: relative;
+    /*overflow: hidden;*/
+    -webkit-transform: translateY(0px) translateZ(0px) rotateX(90deg);
+    -moz-transform: translateY(0px) translateZ(0px) rotateX(90deg);
+    transform: translateZ(-50px) rotateY(-90deg);
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    transform-origin: left center;
+    border-top-left-radius: 60px 40px;
+  }
+
+
+/* .box .face.front .flap.left-side .frontside .hole {
+    width: 20px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    overflow: hidden;
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+    }*/
+
+    #myModal-gift .box.nike .face.front .flap.left-side .frontside .hole:after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0%;
+      left: 100%;
+      background-color: #fff;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(-50%, 0%);
+      border-radius: 100%;
+      box-shadow: inset 0px 0px 15px #fff;
+    }
+
+     #myModal-gift .box .face.front .flap.left-side .backside .hole {
+      width: 20px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      right: 60%;
+      overflow: hidden;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+    }
+
+     #myModal-gift .box.nike .face.front .flap.left-side .backside .hole:after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 0;
+      left: 0%;
+      background-color: #fff;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(-50%, 0%);
+      border-radius: 100%;
+      box-shadow: inset 0px 0px 15px #fff;
+    }
+
+     #myModal-gift .box .face.front .flap.right-side {
+      width: 50px;
+      height: 180px;
+      top: -1px;
+      left: -1px;
+      -webkit-transform: translateY(250px) translateZ(0px) rotateX(-90deg);
+      -moz-transform: translateY(250px) translateZ(0px) rotateX(-90deg);
+      transform: translateX(250px) translateZ(-50px) rotateY(90deg);
+      -webkit-transform-origin: right center;
+      -moz-transform-origin: right center;
+      transform-origin: right center;
+    }
+
+    #myModal-gift .box .face.front .flap.right-side .frontside .hole {
+      width: 20px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      right: 60%;
+      overflow: hidden;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+    }
+
+    #myModal-gift .box.nike .face.front .flap.right-side .frontside .hole:after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      right: 100%;
+      background-color: #fff;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      border-radius: 100%;
+      box-shadow: inset 0px 0px 15px #fff;
+    }
+
+    #myModal-gift .box .face.front .flap.right-side .backside .hole {
+      width: 20px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      overflow: hidden;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+    }
+
+    #myModal-gift .box.nike .face.front .flap.right-side .backside .hole:after {
+      content: '';
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      background-color: #fff;
+      -webkit-transform: translate(0%, -50%);
+      -moz-transform: translate(0%, -50%);
+      transform: translate(0%, -50%);
+      border-radius: 100%;
+      box-shadow: inset 0px 0px 15px #fff;
+    }
+
+    #myModal-gift .box .face.front .flap .frontside>img.nike {
+      width: 60%;
+      position: absolute;
+    }
+
+    #myModal-gift .box .face.front .flap.right-side .frontside>img.nike {
+      top: 8px;
+      right: 70%;
+      -webkit-transform: translateX(50%) rotate(-90deg);
+      -moz-transform: translateX(50%) rotate(-90deg);
+      transform: translateX(50%) rotate(-90deg);
+    }
+
+    #myModal-gift .box .face.front .flap.left-side .frontside>img.nike {
+      bottom: 8px;
+      right: 30%;
+      -webkit-transform: translateX(50%) rotate(90deg);
+      -moz-transform: translateX(50%) rotate(90deg);
+      transform: translateX(50%) rotate(90deg);
+    }
+
+    #myModal-gift .box .face.front .flap .frontside>img.adidas {
+      width: 80%;
+      position: absolute;
+    }
+
+    #myModal-gift .box .face.front .flap.right-side .frontside>img.adidas {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+      -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+      transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+    }
+
+    #myModal-gift .box .face.front .flap.left-side .frontside>img.adidas {
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+      -moz-transform: translateX(-50%) translateY(-50%) rotate(90deg);
+      transform: translateX(-50%) translateY(-50%) rotate(90deg);
+    }
+
+
+    /*BOTTOM OF THE BOX*/
+
+    #myModal-gift .box .face.back {
+      width: 298px;
+      height: 178px;
+      top: 1px;
+      left: 1px;
+      -webkit-transform: translateY(0px) translateZ(-95px) rotateX(180deg);
+      -moz-transform: translateY(0px) translateZ(-95px) rotateX(180deg);
+      transform: translateY(0px) translateZ(-95px) rotateX(180deg);
+      -webkit-transform-origin: center center;
+      -moz-transform-origin: center center;
+      transform-origin: center center;
+    }
+
+
+    /*BACK AND FRONT OF THE BOX*/
+
+    #myModal-gift .box .face.bottom {
+      width: 298px;
+      height: 93px;
+      top: 1px;
+      left: 1px;
+      -webkit-transform: translateY(180px) translateZ(0px) rotateX(-90deg);
+      -moz-transform: translateY(180px) translateZ(0px) rotateX(-90deg);
+      transform: translateY(180px) translateZ(0px) rotateX(-90deg);
+      -webkit-transform-origin: top center;
+      -moz-transform-origin: top center;
+      transform-origin: top center;
+    }
+
+    #myModal-gift .box .face.bottom .frontside>img.adidas:nth-child(1) {
+      position: absolute;
+      height: 100%;
+      width: 63%;
+      top: 0;
+      left: 82px;
+      transform: skew(-17deg);
+      right: 0;
+      margin: 0px auto;
+    }
+
+    #myModal-gift .box .face.bottom .frontside>img.adidas:nth-child(2) {
+      position: absolute;
+      width: 13%;
+      top: 60%;
+      left: 3%;
+    }
+
+    #myModal-gift .box .face.top {
+      width: 298px;
+      height: 93px;
+      top: 1px;
+      left: 1px;
+      -webkit-transform: translateY(0px) translateZ(-95px) rotateX(90deg);
+      -moz-transform: translateY(0px) translateZ(-95px) rotateX(90deg);
+      transform: translateY(0px) translateZ(-95px) rotateX(90deg);
+      -webkit-transform-origin: top center;
+      -moz-transform-origin: top center;
+      transform-origin: top center;
+    }
+
+    #myModal-gift .box .side {
+      width: 93px;
+      height: 178px;
+    }
+
+    #myModal-gift .box .face.left {
+      top: 1px;
+      left: 1px;
+      -webkit-transform: translateX(0px) translateZ(-95px) rotateY(-90deg);
+      -moz-transform: translateX(0px) translateZ(-95px) rotateY(-90deg);
+      transform: translateX(0px) translateZ(-95px) rotateY(-90deg);
+      -webkit-transform-origin: left center;
+      -moz-transform-origin: left center;
+      transform-origin: left center;
+    }
+
+    #myModal-gift .box .face.right {
+      top: 1px;
+      left: 1px;
+      -webkit-transform: translateX(205px) translateZ(-95px) rotateY(90deg);
+      -moz-transform: translateX(205px) translateZ(-95px) rotateY(90deg);
+      transform: translateX(205px) translateZ(-95px) rotateY(90deg);
+      -webkit-transform-origin: right center;
+      -moz-transform-origin: right center;
+      transform-origin: right center;
+    }
+
+    #myModal-gift .bg-index {
+      position: relative;
+      z-index: 9999;
+    }
+
+
+
+
+    @keyframes snow {
+      0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+      }
+    }
+
+    @-moz-keyframes snow {
+      0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+      }
+    }
+
+    @-webkit-keyframes snow {
+      0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+      }
+    }
+
+    @-ms-keyframes snow {
+      0% {
+        background-position: 0px 0px;
+      }
+      100% {
+        background-position: 500px 1000px, 400px 400px, 300px 300px;
+      }
+    }
+
+
+    #myModal-gift .open-message h2 {
+      margin: 10px;
+    }
+
+
+    /* Larger than phablet (also point when grid becomes active) */
+
+    
+
+    #myModal-gift h1 small {
+      display: block;
+      font-size: 0.5em;
+    }
+
+    #myModal-gift .coupon {
+      font-size: 20px;
+      /*border-radius: 0 3px 3px 0;*/
+      border-radius: 2px;
+      height: 60px;
+      width: 150px;
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      transform-style: preserve-3d;
+    }
+
+    #myModal-gift .coupon .coupon-back,
+    #myModal-gift .coupon .coupon-front {
+      position: absolute;
+      width: 100%;
+      line-height: 22px;
+      padding: 6px 0;
+      display: block;
+      transform: rotateY(180deg);
+      backface-visibility: hidden;
+      background: #fff;
+      border: 2px dashed #AEAEAE;
+      box-sizing: border-box;
+    }
+
+    #myModal-gift .coupon .coupon-back {
+      line-height: 44px;
+      font-size: 30px;
+      transform: rotateY(0deg);
+      backface-visibility: hidden;
+    }
+
+
+/*
+.coupon:before,
+.coupon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: #fff;
+    transform: rotate(-45deg);
+    width: 21px;
+    height: 6px;
+    top: 0;
+    right: 100%;
+    transform-origin: top right;
+    border-radius: 3px 0 0 0;
+}
+
+.coupon:after {
+    transform: rotate(45deg);
+    top: auto;
+    bottom: 0;
+    right: 100%;
+    transform-origin: bottom right;
+    border-radius: 0 0 0 3px;
+    }*/
+
+
+
+
+
+/* Grid
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#myModal-gift .column,
+#myModal-gift .columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  /*background:#fff;*/
+  text-align: center;
+}
+
+
+/* For devices larger than 400px */
+
+@media (min-width: 400px) {
+  #myModal-gift .container {
+    width: 85%;
+    padding: 0;
+  }
+}
+
+
+/* For devices larger than 550px */
+
+
+/* Base Styles
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Code
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#myModal-gift code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  font-size: 90%;
+  white-space: nowrap;
+  background: #F1F1F1;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+}
+
+#myModal-gift pre>code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre;
+}
+
+
+/* Utilities
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#myModal-gift .u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#myModal-gift .u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+#myModal-gift .u-pull-right {
+  float: right;
+}
+
+#myModal-gift .u-pull-left {
+  float: left;
+}
+
+
+/* Misc
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+#myModal-gift hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid #E1E1E1;
+}
+
+
+/* Clearing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/* Self Clearing Goodness */
+
+#myModal-gift .container:after,
+#myModal-gift .row:after,
+#myModal-gift .u-cf {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+/*
+Note: The best way to structure the use of media queries is to create the queries 
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it 
+there. 
+*/
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {}
+
+#myModal-gift .cube-wrapper {
+  width: calc(100% - 89%);
+  height: 200px;
+  position: relative;
+  margin: 20px auto 20px auto;
+  -webkit-perspective: 500px;
+  -ms-perspective: 500px;
+  perspective: 500px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 100px;
+}
+
+#myModal-gift .cube-wrapper p {
+  position: absolute;
+  bottom: -70px;
+  width: 100%;
+  text-align: center;
+  color: #aaa;
+  -webkit-transition: all 0.5s ease 3s;
+  transition: all 0.5s ease 3s;
+}
+
+#myModal-gift .cube-wrapper.open p {
+  -webkit-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  transform: translateY(50px);
+  -webkit-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+  opacity: 0;
+}
+
+#myModal-gift .cube-wrapper.open {
+  /*-webkit-animation: none;*/
+}
+
+#myModal-gift .open-message {
+  visibility: hidden;
+  -webkit-transform: translateY(50px) scale(0.2);
+  -ms-transform: translateY(50px) scale(0.2);
+  transform: translateY(50px) scale(0.2);
+  -webkit-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  transform-origin: bottom center;
+  text-align: center;
+  z-index: 3;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  max-width: 700px;
+  margin: -100px auto 0;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+}
+
+#myModal-gift .cube-wrapper.open+.open-message {
+  visibility: visible;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+  -webkit-transition: all 0.5s ease 3s;
+  transition: all 0.5s ease 3s;
+}
+
+#myModal-gift .cube {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ( -200px) rotateZ(0) rotateX(-20deg) rotateY(45deg) translateX(-40px) translateY(-120px);
+  -ms-transform: translateZ( -200px) rotateZ(0) rotateX(-20deg) rotateY(45deg) translateX(-40px) translateY(-120px);
+  transform: translateZ( -200px) rotateZ(0) rotateX(-20deg) rotateY(45deg) translateX(-40px) translateY(-120px);
+  cursor: pointer;
+}
+
+#myModal-gift .cube figure {
+  width: 196px;
+  height: 196px;
+  display: block;
+  position: absolute;
+  border: 2px solid #3E2723;
+  top: 100px;
+  left: 0;
+  line-height: 196px;
+  font-size: 120px;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+
+/*.cube figure:before{
+  position: absolute;
+  left: 0;
+  right: 0;
+  content: "";
+  border-top: 10px solid #e1ded9;
+  width: 100%;
+  height: 10px;
+  top: 45%;
+  transition: all 1s ease;
+  z-index: 9;
+  margin: 0px auto;
+
+
+  }*/
+
+  #myModal-gift .cube figure.top:before {
+    display: none;
+  }
+
+
+/*
+.cube figure.left:after{
+  content: url(../img/bow-two.png);
+  position: absolute;
+  top: -26px;
+  right: 0;
+  left: -36px;
+  margin: 0px auto;
+  z-index: 999;
+  display: block;
+  width: 64px;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-transform: translateY(8px) rotateX(0deg);
+  -webkit-transform-origin: 100% 50%;
+  transition: all 1s ease;
+  }*/
+
+  #myModal-gift .present:before {
+    display: none;
+  }
+
+  #myModal-gift .cube .front {
+    -webkit-transform: rotateY( 0deg) translateZ(100px);
+    -ms-transform: rotateY( 0deg) translateZ(100px);
+    transform: rotateY( 0deg) translateZ(100px);
+    background: #795548;
+  }
+
+  #myModal-gift .cube .back {
+    -webkit-transform: rotateX( 180deg) translateZ(100px);
+    -ms-transform: rotateX( 180deg) translateZ(100px);
+    transform: rotateX( 180deg) translateZ(100px);
+    background: #5D4037;
+  }
+
+  #myModal-gift .cube .right {
+    -webkit-transform: rotateY( 90deg) translateZ(100px);
+    -ms-transform: rotateY( 90deg) translateZ(100px);
+    transform: rotateY( 90deg) translateZ(100px);
+    background: #4E342E;
+  }
+
+  #myModal-gift .cube .left {
+    -webkit-transform: rotateY( -90deg) translateZ(96px);
+    -ms-transform: rotateY( -90deg) translateZ(96px);
+    transform: rotateY( -90deg) translateZ(96px);
+    background: #8D6E63;
+  }
+
+  #myModal-gift .cube .top {
+    -webkit-transform: rotateX( 90deg) translateZ(100px);
+    -ms-transform: rotateX( 90deg) translateZ(100px);
+    transform: rotateX( 90deg) translateZ(100px);
+  }
+
+  #myModal-gift .cube .bottom {
+    -webkit-transform: rotateX( -90deg) translateZ(99px);
+    -ms-transform: rotateX( -90deg) translateZ(99px);
+    transform: rotateX( -90deg) translateZ(99px);
+    background: #4E342E;
+  }
+
+  #myModal-gift .cube .shadow {
+    -webkit-transform: rotateX( -90deg) translateZ(101px) translateX(0);
+    -ms-transform: rotateX( -90deg) translateZ(101px) translateX(0);
+    transform: rotateX( -90deg) translateZ(101px) translateX(0);
+    width: 355px;
+    background: rgba(0, 0, 0, 0.1);
+    border: 0;
+    padding: 2px;
+  }
+
+  #myModal-gift .cube .present {
+    margin: 0;
+    width: 150px;
+    height: 60px;
+    -webkit-transform: rotateX( -90deg) rotateZ(29deg) translateZ(195px) translateY(-76px) translateX(60px);
+    -ms-transform: rotateX( -90deg) rotateZ(29deg) translateZ(195px) translateY(-76px) translateX(60px);
+    transform: rotateX( -90deg) rotateZ(29deg) translateZ(195px) translateY(-76px) translateX(60px);
+    border: 0;
+  }
+
+  #myModal-gift .cube .top div {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    font-size: 60px;
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    border: 1px solid #3E2723;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #myModal-gift .cube .top .lower {
+    height: 50%;
+    width: 100%;
+    line-height: 96px;
+  }
+
+  #myModal-gift .open .cube .top .lower {
+    z-index: 2;
+  }
+
+  #myModal-gift .cube .top div,
+  #myModal-gift .cube .shadow {
+    -webkit-transition: -webkit-transform 1s ease 2s, background 1s ease 2s;
+    transition: transform 1s ease 2s, background 1s ease 2s;
+  }
+
+  #myModal-gift .cube .top .lower {
+    -webkit-transition: -webkit-transform 1s ease 1s, background 1s ease 1s, z-index 0 ease 1s;
+    transition: transform 1s ease 1s, background 1s ease 1s, z-index 0 ease 1s;
+  }
+
+  #myModal-gift .open .cube .top div,
+  #myModal-gift .open .cube .shadow {
+    -webkit-transition: -webkit-transform 1s ease 0s, background 1s ease 0s;
+    transition: transform 1s ease 0s, background 1s ease 0s;
+  }
+
+  #myModal-gift .open .cube .top .lower {
+    -webkit-transition: -webkit-transform 1s ease 1s, background 1s ease 1s, z-index 0 ease 1s;
+    transition: transform 1s ease 1s, background 1s ease 1s, z-index 0 ease 1s;
+  }
+
+  #myModal-gift .cube {
+    -webkit-transition: -webkit-transform 1s ease 1s, background 1s ease 1s;
+    transition: transform 1s ease 1s, background 1s ease 1s;
+  }
+
+  #myModal-gift .open .cube {
+    -webkit-transition: -webkit-transform 1s ease 2s, background 1s ease 2s;
+    transition: transform 1s ease 2s, background 1s ease 2s;
+  }
+
+  #myModal-gift .cube .present {
+    -webkit-transition: -webkit-transform 1s ease 0, background 1s ease 0;
+    transition: transform 1s ease 0, background 1s ease 0;
+  }
+
+  #myModal-gift .open .cube .present {
+    -webkit-transition: -webkit-transform 1s ease 2.5s, background 1s ease 2.5s;
+    transition: transform 1s ease 2.5s, background 1s ease 2.5s;
+  }
+
+  #myModal-gift .cube .top .upper-right {
+    -webkit-transform-origin: right center;
+    -ms-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transform: translateZ(0px) translateX(98px);
+    -ms-transform: translateZ(0px) translateX(98px);
+    transform: translateZ(0px) translateX(98px);
+    background: #795548;
+  }
+
+  #myModal-gift .cube .top .lower-right {
+    -webkit-transform-origin: bottom center;
+    -ms-transform-origin: bottom center;
+    transform-origin: bottom center;
+    -webkit-transform: translateZ(-1px) translateY(98px);
+    -ms-transform: translateZ(-1px) translateY(98px);
+    transform: translateZ(-1px) translateY(98px);
+    background: #8D6E63;
+  }
+
+  #myModal-gift .cube .top .upper-left {
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transform: translateZ(0px);
+    -ms-transform: translateZ(0px);
+    transform: translateZ(0px);
+    background: #8D6E63;
+  }
+
+  #myModal-gift .cube .top .lower-left {
+    -webkit-transform-origin: top center;
+    -ms-transform-origin: top center;
+    transform-origin: top center;
+    -webkit-transform: translateZ(-1px);
+    -ms-transform: translateZ(-1px);
+    transform: translateZ(-1px);
+    background: #795548;
+  }
+
+  #myModal-gift .open .cube .top .upper-right {
+    -webkit-transform: translateZ(-1px) translateX(98px) rotateY(150deg);
+    -ms-transform: translateZ(-1px) translateX(98px) rotateY(150deg);
+    transform: translateZ(-1px) translateX(98px) rotateY(150deg);
+    background: #795548;
+  }
+
+  #myModal-gift .open .cube .top .lower-right {
+    -webkit-transform: translateZ(-1px) translateY(98px) rotateX(-150deg);
+    -ms-transform: translateZ(-1px) translateY(98px) rotateX(-150deg);
+    transform: translateZ(-1px) translateY(98px) rotateX(-150deg);
+    background: #A1887F;
+  }
+
+  #myModal-gift .open .cube .top .upper-left {
+    -webkit-transform: translateZ(-1px) rotateY(-150deg);
+    -ms-transform: translateZ(-1px) rotateY(-150deg);
+    transform: translateZ(-1px) rotateY(-150deg);
+    background: #A1887F;
+  }
+
+  #myModal-gift .open .cube .top .lower-left {
+    -webkit-transform: translateZ(-1px) rotateX(150deg);
+    -ms-transform: translateZ(-1px) rotateX(150deg);
+    transform: translateZ(-1px) rotateX(150deg);
+    background: #795548;
+  }
+
+  #myModal-gift .open .cube .shadow {
+    -webkit-transform: rotateX( -90deg) translateZ(101px) translateX(100px);
+    -ms-transform: rotateX( -90deg) translateZ(101px) translateX(100px);
+    transform: rotateX( -90deg) translateZ(101px) translateX(100px);
+  }
+
+  #myModal-gift .open .cube {
+    -webkit-transform: translateZ(-200px) rotateZ(0) rotateX(-70deg) rotateY(45deg) translateX(-40px) translateY(-120px);
+    -ms-transform: translateZ(-200px) rotateZ(0) rotateX(-70deg) rotateY(45deg) translateX(-40px) translateY(-120px);
+    transform: translateZ(-200px) rotateZ(0) rotateX(-70deg) rotateY(45deg) translateX(-40px) translateY(-120px);
+  }
+
+  #myModal-gift .open .cube .present {
+    -webkit-transform: rotateX(60deg) rotateY(-25deg) rotateZ(38deg) translateY(-125px) translateZ(160px) translateX(41px);
+    -ms-transform: rotateX(60deg) rotateY(-25deg) rotateZ(38deg) translateY(-125px) translateZ(160px) translateX(41px);
+    transform: rotateX(60deg) rotateY(-25deg) rotateZ(38deg) translateY(-125px) translateZ(160px) translateX(41px);
+  }
+
+
+
+
+/*****Popup-style*****/
+#myModal-gift .bg-top-back{
+  padding: 20px 0;
+}
+#myModal-gift .side-main-section{
+  /*background: rgba(138, 109, 59, 0.24);*/
+  width: 95%;
+  box-shadow: 0px 0px 7px #777;
+  margin: 13px auto;
+  border-radius: 0;
+  border-top: 7px solid #eb3f3f;
+}
+#myModal-gift .spin-details{
+  float: left;
+  width: 95%;
+  display: block;
+  padding: 94px 20px;
+}
+#myModal-gift .spin-details a.close-cl{
+    background: #eb3f3f;
+    color: #fff;
+    padding: 4px 14px;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    border: 2px solid #eb3f3f;
+    text-decoration: none;
+}
+#myModal-gift .spin-details .btn-sub{
+  background: #eb3f3f;
+  color: #fff;
+  padding: 8px 10px;
+  border: none;
+  outline: none;
+  border:2px solid #eb3f3f;
+text-transform: capitalize;
+}
+#myModal-gift .spin-details .btn-sub:hover{
+ opacity: 0.7;
+ text-decoration: none;
+}
+#myModal-gift .spin-details input.form-control{
+  background:#f5f5f5;
+  border-color: #f5f5f5;
+  height: 40px;
+  box-shadow: none;
+}
+#myModal-gift .spin-details input.form-control:focus,
+#myModal-gift .spin-details input.form-control:active{
+  box-shadow: 0px 0px 5px #eb3f3f;
+}
+#myModal-gift .spin-details-inner h1 {
+  font-size: 25px;
+}
+#myModal-gift .spin-details-inner h1 span{
+  color: #eb3f3f;
+  text-transform: uppercase;
+}
+#myModal-gift .spin-details-inner h5{
+  line-height: 25px;
+}
+#myModal-gift .spin-details-inner ul{
+  list-style:circle;
+  padding-left: 15px;
+}
+#myModal-gift .spin-details-inner ul li{
+  line-height: 30px;
+  list-style:circle;
+}
+#myModal-gift .spin-details, #myModal-gift .close-btn a{
+  color: #eb3f3f;
+}
+#myModal-gift .form-group{
+  position: relative;
+}
+#myModal-gift #invalid_email_msg{
+    background: #9E9E9E;
+    padding: 5px;
+    color: #fffdfd;
+    border: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    width: 247px;
+    text-align: center;
+    top: -40px;
+}
+#myModal-gift #invalid_email_msg:before{
+      content: '';
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 8px solid  #9E9E9E;
+    position: absolute;
+    top: 100%;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@media(max-width: 1300px){
+  #myModal-gift .cube-wrapper{
+    margin: 70px;
+  }
+}
+
+@media(max-width: 767px){
+  #myModal-gift .cube-wrapper{
+    width: 300px;
+    display: inline-block;
+  }
+}
+
+@media(max-width: 1024px){
+  #myModal-gift .cube-wrapper{
+    width: calc(100% - 80%);
+  }
+}
+
+
+
+/*by developer*/
+#myModal-gift .container-fluid.bg-top-back {
+  padding:0;
+}
+
+#myModal-gift .side-main-section {
+  width: 100%;
+  margin: 0;
+}
+.close-btn a:hover {
+  text-decoration: none;
+}
+
+
+@media(max-width: 1400px){
+#myModal-gift #cube{
+  margin:150px 90px 100px 90px;
+}
+}
+
+@media(min-width: 767px){
+  #myModal-gift .close-btn {
+    cursor: pointer;
+    position: fixed;
+    bottom: 25px;
+    right: 40px;
+  }
+  #myModal-gift .close-btn span{
+    color: #000000;
+    position: relative;
+    top: 6px;
+    left: 6px;
+    font-size: 30px;
+  }
+}
